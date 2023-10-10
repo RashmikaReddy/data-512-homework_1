@@ -18,16 +18,16 @@ Append data to respective result lists.
 Save the collected data as JSON files.
 
 # Step 2 Analysis
-2.1 Figure showing Maximum Average and Minimum Average articles text
+2.1 Figure showing Maximum Average and Minimum Average articles text.
 get_max_min_avg_articles(dataframe): This function takes a DataFrame with article views data, calculates the mean views for each article, and returns DataFrames for articles with the maximum and minimum average views.
 
 article_grouped = dataframe.groupby('article')['views'].mean().reset_index(): Within the function, the DataFrame is grouped by the 'article' column, and mean views are calculated.
 
 max_df and min_df: These DataFrames contain articles with the highest and lowest average views, respectively.
 
-2.2 Showing Top 10 Peak Page Views
+2.2 Showing Top 10 Peak Page Views.
 This code identifies the top 10 articles with the highest peak page views for both mobile and desktop access, and it generates corresponding line plots for visual analysis.
 
-2.3 Figure showing articles with fewest months of Data
+2.3 Figure showing articles with fewest months of Data.
 This code identifies the top 10 articles with the least number of views per month for both mobile and desktop access and generates corresponding line plots for visual analysis.
 
