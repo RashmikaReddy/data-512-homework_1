@@ -9,8 +9,6 @@ In order to measure article traffic from 2015-2023, collected data from the Page
 
 Collected counts of pageviews using a specified subset of Wikipedia article pages. This is a subset of the English Wikipedia that represents a large number of [articles about academy award winning movies](https://github.com/RashmikaReddy/data-512-homework_1/blob/main/thank_the_academy.AUG.2023.csv.xlsx).
 
-
-
 # Step 1 Data Acquistion
 
 The fetch_data function retrieves pageviews data for a list of article titles, separates it into mobile and desktop views, and saves the results as JSON files. It involves the following steps:
