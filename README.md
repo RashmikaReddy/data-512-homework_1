@@ -23,6 +23,8 @@ Save the collected data as JSON files.
 # Step 2 Analysis
 # 2.1 Figure showing Maximum Average and Minimum Average articles text.
 
+We will use the Wikipedia API to obtain pageview data for a specific set of articles. This data will be stored in three distinct files: one for mobile access, one for desktop access, and one for cumulative views.
+
 get_max_min_avg_articles(dataframe): This function takes a DataFrame with article views data, calculates the mean views for each article, and returns DataFrames for articles with the maximum and minimum average views.
 
 article_grouped = dataframe.groupby('article')['views'].mean().reset_index(): Within the function, the DataFrame is grouped by the 'article' column, and mean views are calculated.
